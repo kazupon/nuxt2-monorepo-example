@@ -1,4 +1,4 @@
-# nuxt-app1
+# app1
 
 ## Build Setup
 

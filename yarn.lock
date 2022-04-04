@@ -1706,7 +1706,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/types@npm:^2.15.7":
+"@nuxt/types@npm:^2.15.8":
   version: 2.15.8
   resolution: "@nuxt/types@npm:2.15.8"
   dependencies:
@@ -2786,12 +2786,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/reactivity@npm:^3.2.27":
+"@vue/reactivity@npm:3.2.31, @vue/reactivity@npm:^3.2.27":
   version: 3.2.31
   resolution: "@vue/reactivity@npm:3.2.31"
   dependencies:
     "@vue/shared": 3.2.31
   checksum: acef40b4fff4ca7c1409a2c25a9449f122621d19e0efa5a25dfac2625e420ea899a31dd714c4923868e739318cf2ec8212ed6a80a36c127d84803caa3f72010c
+  languageName: node
+  linkType: hard
+
+"@vue/runtime-core@npm:3.2.31":
+  version: 3.2.31
+  resolution: "@vue/runtime-core@npm:3.2.31"
+  dependencies:
+    "@vue/reactivity": 3.2.31
+    "@vue/shared": 3.2.31
+  checksum: c3e2a34d7e96fb05921d6af7ad4ad5f5e183eb78ed159f62cecc406b2d2b05a0c35cea680db6ff4f390a589d7e6d295908456a92137546b870e0f35b9219dc3c
+  languageName: node
+  linkType: hard
+
+"@vue/runtime-dom@npm:^3.2.23":
+  version: 3.2.31
+  resolution: "@vue/runtime-dom@npm:3.2.31"
+  dependencies:
+    "@vue/runtime-core": 3.2.31
+    "@vue/shared": 3.2.31
+    csstype: ^2.6.8
+  checksum: c4b3b64434221002536b6f1e54a717eeac4bdacfa220909080a9298467810b4280ee1235b6ea0258383d4206fb6352fdb3a60d2848b51d008dc4d6c9bea682ad
   languageName: node
   linkType: hard
 
@@ -3228,6 +3249,47 @@ __metadata:
   checksum: 985163db2292fac9e5a1e072bf99f1b5baccf196e4de25a0b0b81865ebddeb3b3eb4480734ef0a2ac8c002845396b91aa89121f5b84f93981a4658164a9ec6e9
   languageName: node
   linkType: hard
+
+"app1@workspace:packages/app1":
+  version: 0.0.0-use.local
+  resolution: "app1@workspace:packages/app1"
+  dependencies:
+    "@babel/eslint-parser": ^7.14.7
+    "@nuxt/types": ^2.15.8
+    "@nuxt/typescript-build": ^2.1.0
+    "@nuxtjs/composition-api": ^0.32.0
+    "@nuxtjs/eslint-config-typescript": ^6.0.1
+    "@nuxtjs/eslint-module": ^3.0.2
+    core-js: ^3.15.1
+    eslint: ^7.29.0
+    eslint-config-prettier: ^8.3.0
+    eslint-plugin-nuxt: ^2.0.0
+    eslint-plugin-vue: ^7.12.1
+    nuxt: ^2.15.8
+    prettier: ^2.3.2
+    vue-tsc: ^0.33.9
+  languageName: unknown
+  linkType: soft
+
+"app2@workspace:packages/app2":
+  version: 0.0.0-use.local
+  resolution: "app2@workspace:packages/app2"
+  dependencies:
+    "@babel/eslint-parser": ^7.14.7
+    "@nuxt/types": ^2.15.8
+    "@nuxt/typescript-build": ^2.1.0
+    "@nuxtjs/composition-api": ^0.32.0
+    "@nuxtjs/eslint-config-typescript": ^6.0.1
+    "@nuxtjs/eslint-module": ^3.0.2
+    core-js: ^3.15.1
+    eslint: ^7.29.0
+    eslint-config-prettier: ^8.3.0
+    eslint-plugin-nuxt: ^2.0.0
+    eslint-plugin-vue: ^7.12.1
+    nuxt: ^2.15.8
+    prettier: ^2.3.2
+  languageName: unknown
+  linkType: soft
 
 "aproba@npm:^1.0.3 || ^2.0.0":
   version: 2.0.0
@@ -4811,6 +4873,13 @@ __metadata:
   dependencies:
     css-tree: ^1.1.2
   checksum: 380ba9663da3bcea58dee358a0d8c4468bb6539be3c439dc266ac41c047217f52fd698fb7e4b6b6ccdfb8cf53ef4ceed8cc8ceccb8dfca2aa628319826b5b998
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^2.6.8":
+  version: 2.6.20
+  resolution: "csstype@npm:2.6.20"
+  checksum: cb5d5ded49c3390909e93b20b285d4a63d0ba5b10294bdfbc4cf911f80e91d6cf367ea671f99f09570762535c14ea7074a2c7fa73f02008203f01328dea8968b
   languageName: node
   linkType: hard
 
@@ -8662,34 +8731,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-app1@workspace:packages/nuxt-app1":
-  version: 0.0.0-use.local
-  resolution: "nuxt-app1@workspace:packages/nuxt-app1"
-  dependencies:
-    "@babel/eslint-parser": ^7.14.7
-    "@nuxt/types": ^2.15.7
-    "@nuxt/typescript-build": ^2.1.0
-    "@nuxtjs/composition-api": ^0.32.0
-    "@nuxtjs/eslint-config-typescript": ^6.0.1
-    "@nuxtjs/eslint-module": ^3.0.2
-    core-js: ^3.15.1
-    eslint: ^7.29.0
-    eslint-config-prettier: ^8.3.0
-    eslint-plugin-nuxt: ^2.0.0
-    eslint-plugin-vue: ^7.12.1
-    nuxt: ^2.15.7
-    prettier: ^2.3.2
-    vue-tsc: ^0.33.9
-  languageName: unknown
-  linkType: soft
-
 "nuxt2-monorepo-sample@workspace:.":
   version: 0.0.0-use.local
   resolution: "nuxt2-monorepo-sample@workspace:."
+  dependencies:
+    "@vue/runtime-dom": ^3.2.23
   languageName: unknown
   linkType: soft
 
-"nuxt@npm:^2.15.7":
+"nuxt@npm:^2.15.8":
   version: 2.15.8
   resolution: "nuxt@npm:2.15.8"
   dependencies:

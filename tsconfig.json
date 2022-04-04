@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "allowJs": true,
+    "composite": true
+  },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
+  },
+  "types": ["unplugin-vue2-script-setup/types"]
+}
