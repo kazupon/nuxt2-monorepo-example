@@ -6,10 +6,20 @@
   ],
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
-    "@vue/runtime-dom": "^3.2.23"
+    "@babel/eslint-parser": "^7.17.0",
+    "@nuxtjs/eslint-config-typescript": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "@vue/runtime-dom": "^3.2.23",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "prettier": "^2.6.2"
   },
   "scripts": {
-    "lint": "npm run lint --workspaces",
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
     "format": "prettier --check --ignore-path .gitignore ."
   }
 }
