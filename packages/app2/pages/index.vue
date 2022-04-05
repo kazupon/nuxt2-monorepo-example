@@ -4,5 +4,8 @@ const message = ref('hello nuxt app2!')
 </script>
 
 <template>
-  <h1>{{ message }}</h1>
+  <div>
+    <h1>{{ message }}</h1>
+    <p>{{ $hello('Hello World!') }}</p>
+  </div>
 </template>
