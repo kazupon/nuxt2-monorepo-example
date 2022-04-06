@@ -9,7 +9,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "allowJs": true,
     "types": [
       "@nuxt/types",
       "@types/node"

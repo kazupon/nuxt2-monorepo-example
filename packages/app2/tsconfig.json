@@ -21,6 +21,9 @@
       ],
       "#component1": [
         "../component1/src/index"
+      ],
+      "@nuxt/types": [
+        "../module1/dist/module.d.ts"
       ]
     },
     "types": [
