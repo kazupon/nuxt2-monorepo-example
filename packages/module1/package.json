@@ -6,7 +6,7 @@
     "build": "unbuild"
   },
   "main": "./module.cjs",
-  "types": "./type/module.d.ts",
+  "types": "./types/module.d.ts",
   "files": [
     "module.cjs",
     "dist",

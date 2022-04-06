@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
@@ -52,6 +53,10 @@ const config: NuxtConfig = {
 
   server: {
     port: 3002
+  },
+
+  alias: {
+    '#component1': resolve(__dirname, '../component1/src/index')
   }
 }
 

@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
@@ -33,7 +34,8 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/typescript
     ['@nuxt/typescript-build', { typeCheck: false }],
     '@nuxtjs/composition-api/module',
-    'unplugin-vue2-script-setup/nuxt'
+    'unplugin-vue2-script-setup/nuxt',
+    'module1'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,6 +46,10 @@ const config: NuxtConfig = {
 
   server: {
     port: 3001
+  },
+
+  alias: {
+    '#composable1': resolve(__dirname, '../composable1/src/index.ts')
   }
 }
 

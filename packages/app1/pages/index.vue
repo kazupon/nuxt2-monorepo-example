@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from '@nuxtjs/composition-api'
-const message = ref('hello nuxt app1!')
+import { useHello } from '#composable1'
+const message = ref(useHello('hello nuxt app1!'))
 </script>
 
 <template>

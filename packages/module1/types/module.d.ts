@@ -1,6 +1,6 @@
-declare module '@nuxt/types' {
+declare module '@nuxt/types/app' {
   interface Context {
-    $hello(message: string): void
+    $hello(message: string): string
   }
 }
 
