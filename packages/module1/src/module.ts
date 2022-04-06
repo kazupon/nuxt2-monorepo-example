@@ -1,9 +1,17 @@
-import { resolve } from 'pathe'
+import { resolve } from 'path'
 import type { Module } from '@nuxt/types'
-import { createCommonJS } from 'mlly'
-import type { Options } from '../types/module'
 
-const { __dirname } = createCommonJS(import.meta.url)
+declare module '@nuxt/types' {
+  interface Context {
+    $hello(message: string): string
+  }
+}
+
+export interface Options {
+  a: boolean
+  b: number
+  c: string
+}
 
 const Module1: Module<Options> = function (moduleOptions) {
   // Use this, this.options, this.nuxt

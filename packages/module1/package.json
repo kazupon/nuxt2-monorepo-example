@@ -3,23 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "unbuild"
+    "build": "tsc -p ."
   },
-  "main": "./module.cjs",
-  "types": "./types/module.d.ts",
+  "main": "./dist/module.js",
+  "types": "./dist/module.d.ts",
   "files": [
-    "module.cjs",
-    "dist",
-    "types"
+    "dist"
   ],
-  "dependencies": {
-    "mlly": "^0.5.1",
-    "pathe": "^0.2.0"
-  },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/composition-api": "^0.32.0",
-    "unbuild": "0.7.2"
+    "typescript": "^4.6.3"
   }
 }

@@ -2,7 +2,7 @@
   "name": "component1",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.32.0"
