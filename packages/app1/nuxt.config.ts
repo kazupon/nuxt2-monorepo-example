@@ -49,7 +49,8 @@ const config: NuxtConfig = {
   },
 
   alias: {
-    '#composable1': resolve(__dirname, '../composable1/src/index.ts')
+    '#composable1': resolve(__dirname, '../composable1/src/index.ts'),
+    '#helpers': resolve(__dirname, '../helpers/src/index.ts')
   }
 }
 
