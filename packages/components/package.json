@@ -1,5 +1,5 @@
 {
-  "name": "component1",
+  "name": "components",
   "private": true,
   "scripts": {
     "typecheck": "vue-tsc --noEmit"

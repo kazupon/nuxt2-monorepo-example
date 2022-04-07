@@ -16,7 +16,7 @@
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"],
-      "#component1": ["../component1/src/index"]
+      "#components": ["../components/src/index"]
     },
     "types": ["@nuxt/types", "@types/node", "unplugin-vue2-script-setup/types", "module1"]
   },

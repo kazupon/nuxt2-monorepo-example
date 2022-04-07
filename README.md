@@ -12,19 +12,27 @@ npm v7 が動作する Node.js 環境 (npm の workspaces を利用してるた�
   - Nuxt2 で実装されたアプリ
 - `app2`
   - Nuxt2 で実装されたアプリ
-- `component1`
+- `assets`
+  - `app1` 、`app2` で使うために共有化された CSS 等の assets 一式
+  - バンドラの alias 機能で定義したパスで import によって参照される example 的なパッケージ
+  - この example では、`app1` に参照されている
+- `components`
   - `app1` 、`app2` で使うために共有化された Vue コンポーネント
   - バンドラの alias 機能で定義したパスで import によって参照される example 的なパッケージ
   - この example では、`app2` に参照されている
-- `compmosable1`
+- `composables`
   - `app1` 、`app2` で使うために共有化された Composition API で実装された合成 (composable) 可能な関数郡
+  - バンドラの alias 機能で定義したパスで import によって参照される example 的なパッケージ
+  - この example では、`app1` に参照されている
+- `helpers`
+  - `app1` 、`app2` で使うために共有化されたヘルパー一式
   - バンドラの alias 機能で定義したパスで import によって参照される example 的なパッケージ
   - この example では、`app1` に参照されている
 - `module1`
   - `app1` 、`app2` で使うために共有化された Nuxt モジュール。Nuxt プラグインが実装されている
   - パッケージマネージャ(npm)を通して参照される example 的なパッケージ
   - この example では、`app1` 、`app2` に参照されている
-  - また、`composable1` では、 型を参照(解決)したいのため、そのパッケージでも参照している
+  - また、`composables` では、 型を参照(解決)したいのため、そのパッケージでも参照している
 
 ## セットアップ
 
@@ -89,10 +97,10 @@ npm run format
 
 vue-tsc を使うと、VUe コンポーネントの template を型チェックすることができます
 
-この example では、`app1`、`app2` そして `component1` の Vue コンポーネントの型チェックが可能です
+この example では、`app1`、`app2` そして `components` の Vue コンポーネントの型チェックが可能です
 
-`component1` を型チェックしたい場合は以下のようにして実行します
+`components` を型チェックしたい場合は以下のようにして実行します
 
 ```sh
-npm run typecheck -w component1
+npm run typecheck -w components
 ```

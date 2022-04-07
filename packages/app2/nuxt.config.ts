@@ -56,7 +56,7 @@ const config: NuxtConfig = {
   },
 
   alias: {
-    '#component1': resolve(__dirname, '../component1/src/index')
+    '#components': resolve(__dirname, '../components/src/index')
   }
 }
 
