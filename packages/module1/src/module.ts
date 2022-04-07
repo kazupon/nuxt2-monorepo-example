@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import type { Module } from '@nuxt/types'
 
 declare module '@nuxt/types' {
-  interface Context {
+  export interface Context {
     $hello(message: string): string
   }
 }

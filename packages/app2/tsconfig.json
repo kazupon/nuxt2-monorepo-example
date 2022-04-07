@@ -8,6 +8,7 @@
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "esnext.asynciterable", "dom"],
@@ -21,15 +22,13 @@
       ],
       "#component1": [
         "../component1/src/index"
-      ],
-      "@nuxt/types": [
-        "../module1/dist/module.d.ts"
       ]
     },
     "types": [
       "@nuxt/types",
       "@types/node",
-      "unplugin-vue2-script-setup/types"
+      "unplugin-vue2-script-setup/types",
+      "module1"
     ]
   },
   "exclude": [

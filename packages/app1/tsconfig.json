@@ -10,6 +10,7 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "allowJs": true,
     "paths": {
@@ -26,7 +27,8 @@
     "types": [
       "@nuxt/types",
       "@types/node",
-      "unplugin-vue2-script-setup/types"
+      "unplugin-vue2-script-setup/types",
+      "module1"
     ]
   },
   "exclude": [
