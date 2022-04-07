@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch"
   },
   "main": "./dist/module.js",
   "types": "./dist/module.d.ts",

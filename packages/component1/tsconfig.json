@@ -11,11 +11,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "types": [
-      "@nuxt/types",
-      "@types/node",
-      "unplugin-vue2-script-setup/types"
-    ]
+    "types": ["@nuxt/types", "@types/node", "unplugin-vue2-script-setup/types"]
   },
   "vueCompilerOptions": {
     "experimentalCompatMode": 2

@@ -14,28 +14,13 @@
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "allowJs": true,
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ],
-      "#composable1": [
-        "../composable1/src/index"
-      ]
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "#composable1": ["../composable1/src/index"]
     },
-    "types": [
-      "@nuxt/types",
-      "@types/node",
-      "unplugin-vue2-script-setup/types",
-      "module1"
-    ]
+    "types": ["@nuxt/types", "@types/node", "unplugin-vue2-script-setup/types", "module1"]
   },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ],
+  "exclude": ["node_modules", ".nuxt", "dist"],
   "vueCompilerOptions": {
     "experimentalCompatMode": 2
   }
